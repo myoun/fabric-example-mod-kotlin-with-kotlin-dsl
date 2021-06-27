@@ -2,10 +2,11 @@ plugins {
     kotlin("jvm") version "1.5.0"
     id("fabric-loom")
     `maven-publish`
+    java
 }
 
 group = properties["maven_group"]!!
-version = properties["archives_base_name"]!!
+version = properties["mod_version"]!!
 
 repositories {
     // Add repositories to retrieve artifacts from in here.
