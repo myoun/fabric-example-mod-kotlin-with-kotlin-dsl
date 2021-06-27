@@ -5,8 +5,8 @@ plugins {
     java
 }
 
-group = properties["maven_group"]!!
-version = properties["mod_version"]!!
+group = property("maven_group")!!
+version = property("mod_version")!!
 
 repositories {
     // Add repositories to retrieve artifacts from in here.
@@ -17,11 +17,11 @@ repositories {
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:${properties["minecraft_version"]}")
-    mappings("net.fabricmc:yarn:${properties["yarn_mappings"]}:v2")
-    modImplementation("net.fabricmc:fabric-loader:${properties["loader_version"]}")
+    minecraft("com.mojang:minecraft:${property("minecraft_version")}")
+    mappings("net.fabricmc:yarn:${property("yarn_mappings")}:v2")
+    modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
 
-    modImplementation("net.fabricmc:fabric-language-kotlin:${properties["fabric_kotlin_version"]}")
+    modImplementation("net.fabricmc:fabric-language-kotlin:${property("fabric_kotlin_version")}")
 }
 
 tasks {
@@ -34,11 +34,7 @@ tasks {
     }
 
     jar {
-        from ("LICENSE") {
-            rename {
-                "${it}_${property("archives_base_name")}"
-            }
-        }
+        from("LICENSE")
     }
 
     publishing {
