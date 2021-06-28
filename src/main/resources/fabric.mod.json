@@ -19,7 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      {
+        "adapter": "kotlin",
+        "value": "net.fabricmc.example.ExampleMod"
+      }
     ]
   },
   "mixins": [
@@ -30,7 +33,8 @@
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.17.x",
-    "java": ">=16"
+    "java": ">=16",
+    "fabric-language-kotlin": ">=1.6.1+kotlin.1.5.20"
   },
   "suggests": {
     "another-mod": "*"
