@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "1.5.10"
-    id("fabric-loom")
+    id("fabric-loom") version "0.7-SNAPSHOT"
     `maven-publish`
     java
 }
@@ -57,7 +57,7 @@ tasks {
     }
 
     compileKotlin {
-        kotlinOptions.jvmTarget = "16"
+        kotlinOptions.jvmTarget = "8"
     }
 
 }
