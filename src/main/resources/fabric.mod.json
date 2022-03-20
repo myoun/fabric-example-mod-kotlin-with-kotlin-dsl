@@ -30,11 +30,11 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "1.17.x",
-    "java": ">=16",
-    "fabric-language-kotlin": ">=1.6.1+kotlin.1.5.20"
+    "minecraft": "1.18.x",
+    "java": ">=17",
+    "fabric-language-kotlin": ">=1.7.1+kotlin.1.6.10"
   },
   "suggests": {
     "another-mod": "*"
