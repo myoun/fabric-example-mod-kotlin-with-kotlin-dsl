@@ -11,7 +11,7 @@ version = property("mod_version")!!
 repositories {
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
-    // Loom adds the essential maven repositories to downl oad Minecraft and libraries from automatically.
+    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
 }
