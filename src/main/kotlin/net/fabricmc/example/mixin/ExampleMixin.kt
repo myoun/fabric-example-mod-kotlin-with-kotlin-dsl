@@ -8,8 +8,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo
 
 @Mixin(TitleScreen::class)
 class ExampleMixin {
+
     @Inject(at = [At("HEAD")], method = ["init()V"])
-    private fun init(info:CallbackInfo) {
+    private fun init(info: CallbackInfo) {
         println("This line is printed by an example mod mixin!")
     }
 }
